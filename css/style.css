@@ -1,0 +1,81 @@
+body{
+    background: linear-gradient(#3b4df3,#1b87ec,#d0eaf7)
+}
+#top{
+    border-radius:5px;
+    box-shadow: 0px 0px 100px white;
+}
+.profile img{
+    border-radius:5px;
+    box-shadow: 0px 0px 100px white;
+}
+.wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: "游ゴシック","sans-serif";
+}
+header ul{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding-left: 0%;
+}
+header li{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-left: 1px solid white;
+}
+header li:first-child{
+    border: none;
+}
+header li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.main{
+    animation:  UnderToUp;
+    animation-duration: 0.5s;
+    padding: 5%;
+}
+.main p{
+    padding: 10px 5%;
+    margin: 2em 0;
+    background-color: rgba(245, 245, 220, 0.651);
+    border-radius:15px;
+    border: solid 3px #17046d;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+strong{
+    color: white;
+    font-size: 50px;
+}
+h3{
+    color: white;
+}
+.main ul{
+    padding: 10px 5%;
+    margin: 2em 0;
+    background-color: rgba(245, 245, 220, 0.651);
+    border-radius:15px;
+    border: solid 3px #17046d;
+}
+footer{
+    text-align: center;
+}
+@keyframes UnderToUp{
+    0%{
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
