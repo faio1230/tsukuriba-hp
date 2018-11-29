@@ -44,6 +44,20 @@
             }
         }
     </style>
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
 </head>
 <body>
     <header class="sticky-top">
@@ -58,13 +72,13 @@
                         <a class="nav-link" href="#"><img src="img/TOP_hedder.svg" alt="TOP" style="height:20px; padding:0px 5px"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#smoothplay2"><img src="img/WORKS_hedder.svg" alt="WORKS" style="height:20px; padding:0px 5px"></a>
+                        <a class="nav-link" href="#WORKS"><img src="img/WORKS_hedder.svg" alt="WORKS" style="height:20px; padding:0px 5px"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#smoothplay3"><img src="img/PROFILE_hedder.svg" alt="PROFILE" style="height:20px; padding:0px 5px"></a>
+                        <a class="nav-link" href="#PROFILE"><img src="img/PROFILE_hedder.svg" alt="PROFILE" style="height:20px; padding:0px 5px"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#smoothplay4"><img src="img/COMPANY_hedder.svg" alt="COMPANY" style="height:20px; padding:0px 5px"></a>
+                        <a class="nav-link" href="#COMPANY"><img src="img/COMPANY_hedder.svg" alt="COMPANY" style="height:20px; padding:0px 5px"></a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +87,7 @@
     <div class="container">
         <img src="img/tsukuriba_logo.svg" class="text-center img-fluid" style="padding:5% 20%;margin:20px 0px;">
         <p class="text-center mincho corp-message">つくろう。　いっしょに。</p>
-        <div id="smoothplay2"></div>
+        <div id="WORKS"></div>
         <h3><img src="img/WORKS.svg" alt="制作実績" style="margin:100px 0px;"></h3>
         <div class="row works">
             <div class="col-md-4 text-center align-self-center">
@@ -150,7 +164,7 @@
                 <p>AbemaTV 「モンスト1000万個オーブ山分け！ 土田ヒカキン軍団VSダチョウ倶楽部！」制作協力</p>
             </div>
         </div>
-        <div id="smoothplay3"></div>
+        <div id="PROFILE"></div>
         <h2><img src="img/PROFILE.svg" alt="代表者紹介"  style="margin:100px 0px;"></h2>
         <div class="row align-items-center">
             <div class="col-sm-5 text-center">
@@ -190,7 +204,7 @@
             <li>ガンホーフェスティバル2017 メインステージ 総合演出（2017年5月28日）</li>
             <li>テレビ東京「エンタX」（2017年10月-）</li>
         </ul>
-        <div id="smoothplay4"></div>
+        <div id="COMPANY"></div>
         <img src="img/COMPANY.svg" alt="会社概要"  style="margin:100px 0px;">
         <div class="mx-md-5">
         <h4>会社概要</h4>
