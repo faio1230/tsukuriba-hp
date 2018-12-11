@@ -32,15 +32,23 @@
             font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         }
         @media screen and (min-width: 641px){
+            .smartphone,
+            .smartphone>p{
+                display: none;
+            }
             .corp-message{
                 padding-left:5%;
                 font-size: 50px;
             }
         }
         @media screen and (max-width: 640px){
+            .desktop,
+            .desktop>p{
+                display: none;
+            }
             .corp-message{
                 padding-left:5%;
-                font-size: 30px;
+                font-size: 28px;
             }
         }
         .profile-name{
@@ -159,9 +167,10 @@
         <div class="row align-items-center">
             <div class="col-sm-5 text-center">
                 <img src="img/yamada_profile_001.JPG" style="max-width:70%;height:auto;">
-                <p class="profile-name p-2">山田 耕三<br>Yamada Kozo</h2>
+                <p class="profile-name p-2">山田 耕三<br>Yamada Kozo</p>
             </div>
-            <div class="bg-white d-inline-block m-1 p-3">
+            <div class="desktop">
+            <div class="bg-white d-inline-block m-1 p-3 desktop">
                 <p>1997年生まれ。<br>
                     東京大学法学部 卒業。<br>
                     2002年 テレビ東京 入社。<br>
@@ -177,9 +186,29 @@
                     テレビ／ネットにまたがるエンターテイメント全般の<br>
                     プロデュースを手掛ける。</p>
             </div>
+            </div>
+            <div class="smartphone">
+            <div class="bg-white d-inline-block m-1 p-3 smartphone">
+                    <p>1997年生まれ。<br>
+                        東京大学法学部 卒業。<br>
+                        2002年 テレビ東京 入社。<br>
+                        制作局にて音楽／バラエティ番組を中心に様々な番組制作を担当。<br>
+                        「ハロモニ。」「音楽ば～か」「やりすぎコージー」<br>
+                        「木曜8時のコンサート」「年忘れにっぽんの歌」「MelodiX!」など
+                        WEB連動の企画を得意とし、2015年6月から制作プロダクション
+                        テレビ東京制作（PROTX）へ出向してからは多くの
+                        WEB連動地上波番組／WEB番組を制作。<br>
+                        2017年アジア地域最大の広告賞Speaks AsiaでBronz獲得
+                        "BULLET TRAIN" CONNECTED MUSIC VIDEO<br>
+                        2018年1月 独立。株式会社つくりば 設立。<br>
+                        テレビ／ネットにまたがるエンターテイメント全般の
+                        プロデュースを手掛ける。</p>
+                </div>
+            </div>
         </div>
         <h5 style="margin:10px 0px">WEB連動番組／WEB番組 実績（一部抜粋）</h5>
-        <ul class="list-unstyled">
+
+        <ul class="list-unstyled desktop">
             <li>地上波／ニコニコ動画連動レギュラー番組「ドリームクリエイター」（2011年-）</li>
             <li>ニコニコ動画特番 サントリー提供 「集中リゲイン Presents「集中」なんてつくれるか実験してみた」（2015年8月）</li>
             <li>ニコニコ動画特番 JRA提供【うまび杯】真昼の決戦 勝ち馬はオレだ【有馬記念編】（2015年12月27日）</li>
@@ -194,11 +223,55 @@
             <li>ガンホーフェスティバル2017 メインステージ 総合演出（2017年5月28日）</li>
             <li>テレビ東京「エンタX」（2017年10月-）</li>
         </ul>
+
+        <ul class="list-unstyled list-group-flush smartphone">
+                <li class="list-group-item text-center">地上波／ニコニコ動画連動レギュラー番組<br>
+                    「ドリームクリエイター」<br>
+                    （2011年-）</li>
+                <li class="list-group-item text-center">ニコニコ動画特番 サントリー提供 <br>
+                    「集中リゲイン Presents「集中」なんてつくれるか実験してみた」<br>
+                    （2015年8月）</li>
+                <li class="list-group-item text-center">ニコニコ動画特番 JRA提供<br>
+                    【うまび杯】真昼の決戦 勝ち馬はオレだ【有馬記念編】<br>
+                    （2015年12月27日）</li>
+                <li class="list-group-item text-center">ニコニコ動画特番 Yahoo!ジャパン提供 <br>
+                    「ヤフヤフ学園抜打ちテスト」<br>
+                    （2016年4月23日）</li>
+                <li class="list-group-item text-center">ニコニコ超会議<br>
+                    「テレビ東京ブース」制作／プロデュース<br>
+                    （2016年4月29日 30日）</li>
+                <li class="list-group-item text-center">地上波特番 Google提供<br>
+                    「最強エンターテイナー Game Live」<br>
+                    （2016年6月26日）</li>
+                <li class="list-group-item text-center">LINE LIVE公式特番<br>
+                    「テレ東音楽祭 LINE LIVEスペシャル」<br>
+                    （2016年6月29日）</li>
+                <li class="list-group-item text-center">Abema TV レギュラー配信<br>
+                    「アップアップガールズ（仮）武道館 借りてみたけど」<br>
+                    （2016年9月-11月）</li>
+                <li class="list-group-item text-center">テレビ東京/LINE LIVE公式連動プロジェクト<br>
+                    「テレ東のさしめし」<br>
+                    (2016年10月-)</li>
+                <li class="list-group-item text-center">LINE LIVE公式特番<br>
+                    「さしめし」<br>
+                    (2017年2月-)</li>
+                <li class="list-group-item text-center">テレビ東京／LINE LIVE公式連動プロジェクト<br>
+                    「〇〇と新どうが」<br>
+                    （2017年4月-）</li>
+                <li class="list-group-item text-center">ガンホーフェスティバル2017<br>
+                     メインステージ 総合演出<br>
+                     （2017年5月28日）</li>
+                <li class="list-group-item text-center">テレビ東京<br>
+                    「エンタX」<br>
+                    （2017年10月-）</li>
+            </ul>
+
         <div id="COMPANY"></div>
         <img src="img/COMPANY.svg" alt="会社概要"  style="margin:100px 0px;">
         <div class="mx-md-5">
         <h4>会社概要</h4>
-        <ul class="list-unstyled">
+
+        <ul class="list-unstyled desktop">
             <li>会社名　　　：株式会社つくりば</li>
             <li>設立　　　　：2017年12月25日</li>
             <li>本店所在地　：〒107-0062　東京都港区南青山1丁目14番7号ベルメイゾン1F</li>
@@ -206,6 +279,18 @@
             <li>取引銀行　　：三井住友銀行　青山支店（258）</li>
             <li>お問い合わせ：info@tsukuribax.co.jp</li>
         </ul>
+
+        <ul class="list-unstyled smartphone">
+            <li>会社名　　　：株式会社つくりば</li>
+            <li>設立　　　　：2017年12月25日</li>
+            <li>本店所在地　：〒107-0062<br>
+            　　　　　　　 東京都港区南青山1丁目14番7号<br>
+            　　　　　　　 ベルメイゾン1F</li>
+            <li>業務内容　　：テレビ番組、WEB動画の制作</li>
+            <li>取引銀行　　：三井住友銀行　青山支店（258）</li>
+            <li>お問い合わせ：info@tsukuribax.co.jp</li>
+        </ul>
+
         <h4>取引実績</h4>
         <ul class="list-unstyled">
             <li>株式会社 テレビ東京</li>
