@@ -2,54 +2,110 @@
     font-family: "Yu Gothic";
     src: local("Yu Gothic Medium");
     font-weight: 100;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Yu Gothic";
     src: local("Yu Gothic Medium");
     font-weight: 200;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Yu Gothic";
     src: local("Yu Gothic Medium");
     font-weight: 300;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Yu Gothic";
     src: local("Yu Gothic Medium");
     font-weight: 400;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Yu Gothic";
     src: local("Yu Gothic Bold");
     font-weight: bold;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Helvetica Neue";
     src: local("Helvetica Neue Regular");
     font-weight: 100;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Helvetica Neue";
     src: local("Helvetica Neue Regular");
     font-weight: 200;
-  }
-  
-  body,
-  tooltip,
-  popover {
+}
+
+body,
+tooltip,
+popover {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-  }
-  
-  @media all and (-ms-high-contrast: none) {
+}
+
+@media all and (-ms-high-contrast: none) {
     body,
     tooltip,
     popover {
-      font-family: Verdana, Meiryo, sans-serif;
+        font-family: Verdana, Meiryo, sans-serif;
     }
-  }
+}
+
+body {
+    background-color: #ffffcc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.works img {
+    width: 250px;
+    height: 200px;
+    padding: 5px;
+    border: solid 15px #663300;
+    background-color: #ffff;
+    object-fit: contain;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.mincho {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@media screen and (min-width: 641px) {
+    .smartphone,
+    .smartphone>p {
+        display: none;
+    }
+    .corp-message {
+        padding-left: 5%;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .desktop,
+    .desktop>p {
+        display: none;
+    }
+    .corp-message {
+        padding-left: 5%;
+        font-size: 24px;
+    }
+}
+
+.profile-name {
+    font-size: 25px;
+    font-weight: 500;
+}
